@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <ul>
+        <li>{{transactions.stock_name}},{{transactions.number_of_shares}},{{transactions.total_amount_of_money}},{{transactions.time}},</li>
+    </ul>
+    
+     <ul>
+          <li>{{user.funds}}</li>   
+    </ul>
+{% endblock %}

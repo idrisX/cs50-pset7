@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <ul>
+        {%for transactions in transactions%}
+            <li>{{transactions.stock_name}},{{transactions.number_of_shares}},{{transactions.price_per_share}},{{transactions.total_amount_of_money}},{{transactions.time}},</li>
+        {%endfor%}
+    </ul>
+{% endblock %}
